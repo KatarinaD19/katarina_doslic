@@ -3,9 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="autor" content="katarina doslic">
+    <meta name="opis" content="raspored dana">
+    <title>Raspored dana</title>
 </head>
 <body>
-    <h1>zadaća2</h1>
+    <h1>Raspored dana</h1>
+    <h3>Detaljan raspored za tri dana</h3>
+    <table border="1">
+        <caption>Raspored</caption>
+        <tr>
+            <th></th>
+            <th>8:00h</th>
+            <th>12:00h</th>
+            <th>15:00h</th>
+            <th>18:00h</th>
+            <th>21:00h</th>
+        </tr>
+        <tr>
+            <td>Ponedeljak</td>
+            <td>Fakultet</td>
+            <td colspan="2">Jahanje</td>
+            <td>Čitanje</td>
+            <td>Spavanje</td>
+        </tr>
+        <tr>
+            <td>Utorak</td>
+            <td>Trčanje</td>
+            <td>Fakultet</td>
+            <td>Rolanje</td>
+            <td rowspan="2">Film</td>
+            <td>Spavanje</td>
+        </tr>
+        <tr>
+            <td>Srijeda</td>
+            <td>Sviranje</td>
+            <td>Fakultet</td>
+            <td>Jahanje</td>
+            <td>Čitanje</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <h3>Obrazac</h3>
+    <form name="obrazac2" action="link1.html" method="post" autocomplete="off">
+        <label for="ime">Ime</label>
+        <input id="ime" type="text" placeholder="Unesi ime..." required>
+        <br>
+        <br>
+        <label for="prezime">Prezime</label>
+        <input id="prezime" type="text" placeholder="Unesi prezime..." required>
+        <br>
+        <br>
+        <label for="lozinka">Lozinka</label>
+        <input type="password" name="password" id="lozinka" required>
+        <br>
+        <br>
+        <input type="radio" name="language" id="admin" value="admin">
+        <label for="admin">Admin</label>
+        <br>
+        <input type="radio" name="language" id="guest" value="guest">
+        <label for="guest">Guest</label>
+        <br>
+        <br>
+        <h4>Uvjeti korištenja</h4>
+        <input type="checkbox" name="language" id="prihvacam">
+        <label for="prihvacam">Prihvaćam</label>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <br>
+        <br>
+        <input type="reset" value="Reset">
+        <br>
+        <hr>
+        <br>
+        <h3>Videozapis</h3>
+        <video controls>
+            <source src="slike/puppy.mp4" type="video/mp4">
+
+        </video>
+        <br>
+        <br>
+        <h3>Audiozapis</h3>
+        <audio controls>
+            <source src="slike/test-audio.ogg" type="audio/mp3">
+        </audio>
+
+    </form>
+
 </body>
 </html>
